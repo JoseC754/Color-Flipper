@@ -5,7 +5,8 @@ const color = document.querySelector(".color");
 btn.addEventListener("click", function () {
     const randomNumber = getRandomNumber ();
     console.log(randomNumber);
-} )
+});
+
 function getRandomNumber () {
-    return Math.random();
+    return Math.floor(Math.random() * color.lenght);
 }
